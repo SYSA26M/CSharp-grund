@@ -6,33 +6,60 @@ public enum TransactionTypeEnum
     Uttag
 }
 
-class Account
+class Account(string accountNo, string fName, string lName) // Primary constructor...
 {
+
     // Tillstånd = fields (state)
-    public string accountNumber;
-    public string firstName;
-    public string lastName;
-    public int balance = 0;
-    public List<Transaction> transactions = [];
+    private readonly string _accountNumber = accountNo;
+    private string _firstName = fName;
+    private string _lastName = lName;
+    private int _balance = 0;
+    private List<Transaction> _transactions = [];
 
     // Metoder = operations
+    public string GetAccountNumber()
+    {
+        return _accountNumber;
+    }
+    // Går inte...
+    // public void SetAccountNumber(string value)
+    // {
+    //     _accountNumber = value;
+    // }
+    public int GetBalance()
+    {
+        return _balance;
+    }
+    public List<Transaction> GetTransactions()
+    {
+        return _transactions;
+    }
+    public string GetFirstName()
+    {
+        return _firstName;
+    }
+    public void SetFirstName(string value)
+    {
+        _firstName = value;
+    }
+
     public void Deposit(int amount)
     {
-        balance += amount;
+        _balance += amount;
         AddTransaction(amount, TransactionTypeEnum.Insättning);
     }
     public void WithDraw(int amount)
     {
-        if (balance < amount)
+        if (_balance < amount)
         {
             throw new Exception("Du har inte tillräckligt på kontot!");
         }
-        balance -= amount;
+        _balance -= amount;
         AddTransaction(amount, TransactionTypeEnum.Uttag);
     }
     public string AccountInfo()
     {
-        var info = $"AccountNumber: {accountNumber} Name: {firstName} {lastName} Balance: {balance}";
+        var info = $"AccountNumber: {_accountNumber} Name: {_firstName} {_lastName} Balance: {_balance}";
         return info;
     }
 
@@ -44,7 +71,7 @@ class Account
         tran.transactionType = transactionType;
         tran.transactionValue = amount;
         // Addera transaktion till vår lista av transaktioner...
-        transactions.Add(tran);
+        _transactions.Add(tran);
     }
 }
 

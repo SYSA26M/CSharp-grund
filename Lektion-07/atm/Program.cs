@@ -5,10 +5,12 @@ namespace atm;
 class Program
 {
     // skapa en kopia/instans av klassen Account...
-    static Account account = new Account();
+    static Account account = new("1111-4567", "Michael", "Gustavsson");
+
     static string? amount = null;
     static void Main()
     {
+
         // Påbörjar vår meny...
         Console.WriteLine("------------------------------------------------------------------");
         Console.WriteLine("Välkommen Westcoast Bank");
@@ -44,20 +46,6 @@ class Program
                         Console.WriteLine(account.AccountInfo());
                         break;
                     case "k":
-                        Console.WriteLine("Ange ditt kontonummer följt av förnamn och efternamn");
-                        string? info = Console.ReadLine();
-                        if (!string.IsNullOrWhiteSpace(info))
-                        {
-                            var result = info.Split(" ");
-                            if (result.Length != 3)
-                            {
-                                throw new Exception("Du måste mata in uppgifterna med mellanslag mellan varje ord");
-                            }
-
-                            account.accountNumber = result[0];
-                            account.firstName = result[1];
-                            account.lastName = result[2];
-                        }
                         break;
                     case "b":
                         DisplayBalance();
@@ -112,12 +100,12 @@ class Program
     // Enkel metod för att skriva ut saldot...
     static void DisplayBalance()
     {
-        Console.WriteLine($"Du har {account.balance} på ditt konto");
+        Console.WriteLine($"Du har {account.GetBalance()} på ditt konto");
     }
 
     static void DisplayTransactions()
     {
-        foreach (var tran in account.transactions)
+        foreach (var tran in account.GetTransactions())
         {
             Console.WriteLine(tran.GetTransactionInfo());
         }
