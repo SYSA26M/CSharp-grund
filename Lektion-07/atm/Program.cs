@@ -5,12 +5,11 @@ namespace atm;
 class Program
 {
     // skapa en kopia/instans av klassen Account...
-    static Account account = new("1111-4567", "Michael", "Gustavsson");
+    static readonly Account account = new("1111-4567", "Michael", "Gustavsson", false);
 
     static string? amount = null;
     static void Main()
     {
-
         // Påbörjar vår meny...
         Console.WriteLine("------------------------------------------------------------------");
         Console.WriteLine("Välkommen Westcoast Bank");

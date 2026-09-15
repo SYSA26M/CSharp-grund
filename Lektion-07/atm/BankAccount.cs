@@ -6,58 +6,54 @@ public enum TransactionTypeEnum
     Uttag
 }
 
-class Account(string accountNo, string fName, string lName) // Primary constructor...
+class Account(string accountNo, string fName, string lName, bool hasInterest) // Primary constructor...
 {
-
-    // Tillstånd = fields (state)
-    private readonly string _accountNumber = accountNo;
-    private string _firstName = fName;
-    private string _lastName = lName;
-    private int _balance = 0;
-    private List<Transaction> _transactions = [];
+    // Consts
+    const double INTEREST_RATE = 0.05;
+    // Fields...
+    private readonly bool hasInterest = hasInterest;
+    private int _balance;
 
     // Properties...
-    public string AccountNumber
-    {
-        get { return _accountNumber; }
-    }
-    public string FirstName
-    {
-        get { return _firstName; }
-        set { _firstName = value; }
-    }
-    public string LastName
-    {
-        get { return _lastName; }
-        set { _lastName = value; }
-    }
+    public string AccountNumber { get; } = accountNo;
     public int Balance
     {
-        get { return _balance; }
+        get
+        {
+            if (hasInterest)
+            {
+                return Convert.ToInt32(_balance * (1 + INTEREST_RATE));
+            }
+            else
+            {
+                return _balance;
+            }
+        }
+        private set { _balance = value; }
     }
-    public List<Transaction> Transactions
-    {
-        get { return _transactions; }
-    }
+    public string FirstName { get; set; } = fName;
+    public string LastName { get; set; } = lName;
+    public IList<Transaction> Transactions { get; } = [];
+    // public IList<Transaction> Transactions { get; } = new List<Transaction>();
 
     // Metoder = operations
     public void Deposit(int amount)
     {
-        _balance += amount;
+        Balance += amount;
         AddTransaction(amount, TransactionTypeEnum.Insättning);
     }
     public void WithDraw(int amount)
     {
-        if (_balance < amount)
+        if (Balance < amount)
         {
             throw new Exception("Du har inte tillräckligt på kontot!");
         }
-        _balance -= amount;
+        Balance -= amount;
         AddTransaction(amount, TransactionTypeEnum.Uttag);
     }
     public string AccountInfo()
     {
-        var info = $"AccountNumber: {_accountNumber} Name: {_firstName} {_lastName} Balance: {_balance}";
+        var info = $"AccountNumber: {AccountNumber} Name: {FirstName} {LastName} Balance: {Balance}";
         return info;
     }
 
@@ -69,7 +65,7 @@ class Account(string accountNo, string fName, string lName) // Primary construct
         tran.transactionType = transactionType;
         tran.transactionValue = amount;
         // Addera transaktion till vår lista av transaktioner...
-        _transactions.Add(tran);
+        Transactions.Add(tran);
     }
 }
 
