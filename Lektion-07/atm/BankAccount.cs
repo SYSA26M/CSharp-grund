@@ -16,33 +16,31 @@ class Account(string accountNo, string fName, string lName) // Primary construct
     private int _balance = 0;
     private List<Transaction> _transactions = [];
 
-    // Metoder = operations
-    public string GetAccountNumber()
+    // Properties...
+    public string AccountNumber
     {
-        return _accountNumber;
+        get { return _accountNumber; }
     }
-    // Går inte...
-    // public void SetAccountNumber(string value)
-    // {
-    //     _accountNumber = value;
-    // }
-    public int GetBalance()
+    public string FirstName
     {
-        return _balance;
+        get { return _firstName; }
+        set { _firstName = value; }
     }
-    public List<Transaction> GetTransactions()
+    public string LastName
     {
-        return _transactions;
+        get { return _lastName; }
+        set { _lastName = value; }
     }
-    public string GetFirstName()
+    public int Balance
     {
-        return _firstName;
+        get { return _balance; }
     }
-    public void SetFirstName(string value)
+    public List<Transaction> Transactions
     {
-        _firstName = value;
+        get { return _transactions; }
     }
 
+    // Metoder = operations
     public void Deposit(int amount)
     {
         _balance += amount;

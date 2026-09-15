@@ -100,12 +100,12 @@ class Program
     // Enkel metod för att skriva ut saldot...
     static void DisplayBalance()
     {
-        Console.WriteLine($"Du har {account.GetBalance()} på ditt konto");
+        Console.WriteLine($"Du har {account.Balance} på ditt konto");
     }
 
     static void DisplayTransactions()
     {
-        foreach (var tran in account.GetTransactions())
+        foreach (var tran in account.Transactions)
         {
             Console.WriteLine(tran.GetTransactionInfo());
         }
