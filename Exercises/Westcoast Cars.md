@@ -5,10 +5,10 @@ Måndag 21/9-2026
 _Westcoast Cars är ett företag som köper och säljer begagnade tjänstebilar._
 
 De köper in batchvis med bilar ifrån tillverkare som:
-	-Volvo
-	-Ford
-	-BMW
-	-Volkswagen
+- Volvo
+- Ford
+- BMW
+- Volkswagen
 
 Typer av bilar/fordon som de arbetar med är bland annat.
 	- Bilar
