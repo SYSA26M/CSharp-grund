@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
+        x:Class="Client.MainWindow"
+        Width="1024" 
+        Height="768"
+        Background="#020618"
+        Foreground="White"
+        Title="Westcoast Cars">
+    <StackPanel Background="Orange" Orientation="Vertical" Spacing="20" Margin="30">
+        <TextBlock Background="Red" Padding="20 10" FontSize="40" HorizontalAlignment="Center" Text="Westcoast Cars!"/>
+        <TextBlock Background="Blue" TextAlignment="Center" FontSize="40" Padding="20" Margin="20" HorizontalAlignment="Stretch" Text="Westcoast Cars!"/>
+        <Button Background="#14144F" Foreground="#ffffff" Padding="40 15" CornerRadius="50" FontSize="40" HorizontalAlignment="Center">Klicka på mig</Button>
+    </StackPanel>
+</Window>
