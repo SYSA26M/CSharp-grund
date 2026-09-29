@@ -9,9 +9,54 @@
         Background="#020618"
         Foreground="White"
         Title="Westcoast Cars">
-    <StackPanel Background="Orange" Orientation="Vertical" Spacing="20" Margin="30">
+
+        <Grid ColumnDefinitions="Auto,*">
+            <Border BorderBrush="#74B5B5B5" BorderThickness="0 0 2 0" Padding="10" Background="#FF1C1C6F">
+            <Grid RowDefinitions="*,Auto">
+            <StackPanel Spacing="10">
+                <TextBlock FontSize="30" Text="Westcoast Cars"/>
+                <Button Content="Fordon" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Kunder" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Verkstad" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Service Bokning" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Reservdelar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+            <Button Grid.Row="1" Content="Inställningar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+            </Grid>
+            </Border>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock FontSize="40" Text="Jag är i andra kolumnen"/>
+                <TextBox Name="Manufacturer" FontSize="30" />
+                <TextBlock FontSize="30" Text="{Binding #Manufacturer.Text}" />
+            </StackPanel>
+        </Grid>
+        <!-- <Grid ColumnDefinitions="Auto,Auto,100,*" RowDefinitions="300,500">
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <TextBlock Text="Här är jag"/>
+                <TextBlock Text="Här är jag"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Här är jag"/>
+                <TextBlock Text="Här är jag"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="Här är jag"/>
+                <TextBlock Text="Här är jag"/>
+            </StackPanel>
+            <StackPanel Grid.Column="3" HorizontalAlignment="Right">
+                <TextBlock Text="Här är jag"/>
+                <TextBlock Text="Här är jag"/>
+            </StackPanel>
+        </Grid> -->
+
+
+
+
+    <!-- <StackPanel Background="Orange" Orientation="Vertical" Spacing="20" Margin="30">
         <TextBlock Background="Red" Padding="20 10" FontSize="40" HorizontalAlignment="Center" Text="Westcoast Cars!"/>
         <TextBlock Background="Blue" TextAlignment="Center" FontSize="40" Padding="20" Margin="20" HorizontalAlignment="Stretch" Text="Westcoast Cars!"/>
-        <Button Background="#14144F" Foreground="#ffffff" Padding="40 15" CornerRadius="50" FontSize="40" HorizontalAlignment="Center">Klicka på mig</Button>
-    </StackPanel>
+        <Button Name="Button" Click="Button_Click" Background="#14144F" Foreground="#ffffff" Padding="40 15" CornerRadius="50" FontSize="40" HorizontalAlignment="Center">Klicka på mig</Button>
+        <Button Name="SaveButton" Click="SaveButton_Click" Background="#14144F" Foreground="#ffffff" Padding="40 15" CornerRadius="50" FontSize="40" HorizontalAlignment="Center">Spara</Button>
+        <Button Click="Updatera" Background="#14144F" Foreground="#ffffff" Padding="40 15" CornerRadius="50" FontSize="40" HorizontalAlignment="Center">Updatera</Button>
+    </StackPanel> -->
 </Window>
