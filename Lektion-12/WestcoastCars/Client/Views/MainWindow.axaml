@@ -36,7 +36,7 @@
                 <TextBlock Text="{Binding Model}" Foreground="White" FontSize="30" />
                 <TextBox Text="{Binding Manufacturer}" FontSize="30" Width="300" />
                 <TextBox Text="{Binding Model}" FontSize="30" Width="300" />
-                <Button Command="{Binding AddVehicle}" Content="Change manufacturer" FontSize="25" Foreground="White" Background="Orange" />
+                <Button Command="{Binding AddVehicleCommand}" Content="Change manufacturer" FontSize="25" Foreground="White" Background="Orange" />
             </StackPanel>
         </Grid>
 </Window>

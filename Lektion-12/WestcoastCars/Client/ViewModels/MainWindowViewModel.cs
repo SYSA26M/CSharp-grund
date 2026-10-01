@@ -1,47 +1,22 @@
-﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+﻿
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Client.ViewModels;
 
 // Vårt DataContext
-public class MainWindowViewModel : INotifyPropertyChanged
+public partial class MainWindowViewModel : ViewModelBase
 {
+    [ObservableProperty]
     private string _manufacturer = "Volvo";
+
+    [ObservableProperty]
     private string _model = "XC40";
 
-    public string Manufacturer
-    {
-        get => _manufacturer;
-        set
-        {
-            _manufacturer = value;
-            OnPropertyChanged();
-        }
-    }
-
-    public string Model
-    {
-        get => _model;
-        set
-        {
-            _model = value;
-            OnPropertyChanged(nameof(Model));
-        }
-    }
-
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    public void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
+    [RelayCommand]
     public void AddVehicle()
     {
-        Console.WriteLine($"Den gamla tillverkaren: {Manufacturer}");
         Manufacturer = "Kia";
-        Model = "EV6";
-        Console.WriteLine($"Lade till {Manufacturer}");
+        Model = "EV3";
     }
 }
