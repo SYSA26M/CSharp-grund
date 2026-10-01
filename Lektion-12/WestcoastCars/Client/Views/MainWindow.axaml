@@ -2,6 +2,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:Client.ViewModels"
+        x:DataType="vm:MainWindowViewModel"
         mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
         x:Class="Client.MainWindow"
         Width="1024" 
@@ -26,9 +28,9 @@
             </Border>
             <!-- Content i andra kolumnen -->
             <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Name="Make" Foreground="White" FontSize="30" />
-                <TextBox Name="NewManufacturer" FontSize="30" Width="300" />
-                <Button Name="ChangeMake" Click="ChangeMake_Click" Content="Change manufacturer" FontSize="25" Foreground="White" Background="Orange" />
+                <TextBlock Foreground="White" FontSize="30" />
+                <TextBox FontSize="30" Width="300" />
+                <Button Content="Change manufacturer" FontSize="25" Foreground="White" Background="Orange" />
             </StackPanel>
         </Grid>
 </Window>
