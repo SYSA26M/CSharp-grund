@@ -24,10 +24,10 @@
             <Button Grid.Row="1" Content="Inställningar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
             </Grid>
             </Border>
+            <!-- Content i andra kolumnen -->
             <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock FontSize="40" Text="Jag är i andra kolumnen"/>
-                <TextBox FontSize="30" />
-                <TextBlock Foreground="White" FontSize="30" />
+                <TextBlock Name="Make" Foreground="White" FontSize="30" />
+                <Button Name="ChangeMake" Click="ChangeMake_Click" Content="Change manufacturer" FontSize="30" Foreground="White" Background="Orange" />
             </StackPanel>
         </Grid>
 </Window>

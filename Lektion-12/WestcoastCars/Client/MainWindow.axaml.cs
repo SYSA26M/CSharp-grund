@@ -9,21 +9,12 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        Make.Text = Manufacturer;
     }
 
-
-    private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void ChangeMake_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        Console.WriteLine("Du klickade på mig!");
-    }
-
-    private void SaveButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-    {
-        Console.WriteLine("Jag sparar!");
-    }
-
-    private void Updatera(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-    {
-        Console.WriteLine("Jag uppdaterar!");
+        Manufacturer = "Mercedes";
+        Make.Text = Manufacturer;
     }
 }
