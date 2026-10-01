@@ -5,16 +5,17 @@ namespace Client;
 
 public partial class MainWindow : Window
 {
-    public string Manufacturer { get; set; } = "Kia";
+    public Vehicle Vehicle { get; set; }
     public MainWindow()
     {
         InitializeComponent();
-        Make.Text = Manufacturer;
+        Vehicle = new();
+        Make.Text = Vehicle.Manufacturer;
     }
 
     private void ChangeMake_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        Manufacturer = "Mercedes";
-        Make.Text = Manufacturer;
+        Vehicle.Manufacturer = NewManufacturer.Text!;
+        Make.Text = Vehicle.Manufacturer;
     }
 }
