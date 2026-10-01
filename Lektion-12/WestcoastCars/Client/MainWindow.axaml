@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
+        x:Class="Client.MainWindow"
+        Width="1024" 
+        Height="768"
+        Background="#020618"
+        Foreground="White"
+        Title="Westcoast Cars">
+
+        <Grid ColumnDefinitions="Auto,*">
+            <Border BorderBrush="#74B5B5B5" BorderThickness="0 0 2 0" Padding="10" Background="#FF1C1C6F">
+            <Grid RowDefinitions="*,Auto">
+            <StackPanel Spacing="10">
+                <TextBlock FontSize="30" Text="Westcoast Cars"/>
+                <Button Content="Fordon" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Kunder" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Verkstad" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Service Bokning" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                <Button Content="Reservdelar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+            <Button Grid.Row="1" Content="Inställningar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+            </Grid>
+            </Border>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock FontSize="40" Text="Jag är i andra kolumnen"/>
+                <TextBox FontSize="30" />
+                <TextBlock Foreground="White" FontSize="30" />
+            </StackPanel>
+        </Grid>
+</Window>
