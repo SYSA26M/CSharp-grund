@@ -12,6 +12,10 @@
         Foreground="White"
         Title="Westcoast Cars">
 
+        <Design.DataContext>
+            <vm:MainWindowViewModel></vm:MainWindowViewModel>
+        </Design.DataContext>
+
         <Grid ColumnDefinitions="Auto,*">
             <Border BorderBrush="#74B5B5B5" BorderThickness="0 0 2 0" Padding="10" Background="#FF1C1C6F">
             <Grid RowDefinitions="*,Auto">
@@ -27,10 +31,12 @@
             </Grid>
             </Border>
             <!-- Content i andra kolumnen -->
-            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Foreground="White" FontSize="30" />
-                <TextBox FontSize="30" Width="300" />
-                <Button Content="Change manufacturer" FontSize="25" Foreground="White" Background="Orange" />
+            <StackPanel Spacing="20" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="{Binding Manufacturer}" Foreground="White" FontSize="30" />
+                <TextBlock Text="{Binding Model}" Foreground="White" FontSize="30" />
+                <TextBox Text="{Binding Manufacturer}" FontSize="30" Width="300" />
+                <TextBox Text="{Binding Model}" FontSize="30" Width="300" />
+                <Button Command="{Binding AddVehicle}" Content="Change manufacturer" FontSize="25" Foreground="White" Background="Orange" />
             </StackPanel>
         </Grid>
 </Window>
