@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:Client.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Client.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="Client">
+
+    <StackPanel Spacing="10">
+        <Button Command="{Binding GoToHomeCommand}" Background="Blue" FontSize="30">Home</Button>
+        <Button Command="{Binding GoToProductsCommand}" Background="Yellow" FontSize="30" Foreground="Black">Products</Button>
+        <UserControl Padding="20" Content="{Binding CurrentView}" />
+    </StackPanel>
+
+</Window>
