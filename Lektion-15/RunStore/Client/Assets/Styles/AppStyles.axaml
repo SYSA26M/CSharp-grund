@@ -6,26 +6,31 @@
       <Button>
         <StackPanel Orientation="Horizontal">
           <Label FontFamily="{StaticResource IconFont}" Content="&#xE2C2;"/>
-          <Label Content="Button"/>
+          <Label Content="Inställningar"/>
         </StackPanel>
       </Button>
     </Border>
   </Design.PreviewWith>
 
   <!-- Add Styles Here -->
+  <Style Selector="Window">
+    <Setter Property="FontFamily" Value="{DynamicResource BaseFont}" />
+    <Setter Property="Background" Value="{DynamicResource PrimaryBackgroundColor}" />
+  </Style>
+
   <Style Selector="Button">
     <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}" />
     <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
     <Setter Property="FontSize" Value="20"/>
+    <Setter Property="MinWidth" Value="200" />
     <Setter Property="HorizontalAlignment" Value="Stretch"/>
     <Setter Property="Padding" Value="10 5" />
-    <Setter Property="CornerRadius" Value="20"/>
   </Style>
 
   <Style Selector="Button:pointerover /template/ ContentPresenter">
-    <Setter Property="Background" Value="Yellow" />
-    <Setter Property="Foreground" Value="Blue"/>
-    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="Background" Value="#3029B6" />
+    <Setter Property="Foreground" Value="#f4f4f4"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
   </Style>
 
 </Styles>

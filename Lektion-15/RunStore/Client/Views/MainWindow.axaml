@@ -14,7 +14,7 @@
                 <vm:MainWindowViewModel></vm:MainWindowViewModel>
         </Design.DataContext>
 
-        <Grid ColumnDefinitions="Auto,*" Background="{DynamicResource PrimaryBackgroundColor}">
+        <Grid ColumnDefinitions="Auto,*">
                 <Border Padding="20" Background="{DynamicResource SideBarGradient}">
                         <StackPanel Spacing="10" >
                                 <Button Command="{Binding GoToHomeCommand}">
@@ -29,8 +29,16 @@
                                                 <Label Content="Produkter"/>
                                         </StackPanel>
                                 </Button>
-                                <Button Command="{Binding GoToCustomersCommand}">Customers</Button>
-                                <Button Command="{Binding GoToOrdersCommand}">Orders</Button>
+                                <Button Command="{Binding GoToCustomersCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Label FontFamily="{DynamicResource IconFont}" Content="&#xe4d6;" />
+                                                <Label Content="Kunder"/>
+                                        </StackPanel>
+                                </Button>
+                                <Button Command="{Binding GoToOrdersCommand}"><StackPanel Orientation="Horizontal">
+                                        <Label FontFamily="{DynamicResource IconFont}" Content="&#xe0b0;" />
+                                        <Label Content="Beställningar"/>
+                                </StackPanel></Button>
                         </StackPanel>
                 </Border>
                 <UserControl Grid.Column="1" Padding="20" Content="{Binding CurrentView}" />

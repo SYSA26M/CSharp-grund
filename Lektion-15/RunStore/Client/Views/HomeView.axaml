@@ -6,6 +6,10 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Client.Views.HomeView"
              x:DataType="vm:HomeViewModel">
-  <TextBlock Text="{Binding PageTitle}"
-             FontSize="30" Foreground="White" />
+    <StackPanel>
+        <TextBlock Text="{Binding PageTitle}"
+                   FontSize="30" Foreground="White" />
+        <Button>Testa mig</Button>
+    </StackPanel>
+
 </UserControl>
