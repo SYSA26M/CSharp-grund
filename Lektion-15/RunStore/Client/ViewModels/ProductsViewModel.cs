@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Client.Interfaces;
@@ -20,10 +21,16 @@ public partial class ProductsViewModel : ViewModelBase
 
     private void LoadProducts()
     {
-        IProductService service = new ProductService();
-        Products = new ObservableCollection<Product>(service.ListAll());
+        try
+        {
+            // IProductService service = new ProductService();
+            IProductService service = new ProductServiceFromFile();
+            Products = new ObservableCollection<Product>(service.ListAll());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
 
-        // var products = service.ListAll();
-        // Products = new ObservableCollection<Product>(products);
     }
 }

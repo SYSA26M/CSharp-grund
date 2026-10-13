@@ -6,6 +6,9 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Client.Views.OrdersView"
              x:DataType="vm:OrdersViewModel">
-    <TextBlock Text="{Binding PageTitle}"
-               FontSize="30" Foreground="White" />
+
+    <Design.DataContext>
+        <vm:OrdersViewModel></vm:OrdersViewModel>
+    </Design.DataContext>
+    <Label Classes="pageTitle" Content="{Binding PageTitle}" />
 </UserControl>

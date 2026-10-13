@@ -12,8 +12,7 @@
     </Design.DataContext>
 
     <StackPanel>
-        <TextBlock Text="{Binding PageTitle}"
-                   FontSize="30" Foreground="White" />
+        <Label Classes="pageTitle" Content="{Binding PageTitle}" />
         <Button>Testa mig</Button>
     </StackPanel>
 

@@ -12,7 +12,7 @@
   </Design.DataContext>
 
   <StackPanel>
-    <TextBlock Text="{Binding PageTitle}" Foreground="{DynamicResource ForegroundColor}" FontSize="30" />
+    <Label Classes="pageTitle" Content="{Binding PageTitle}" />
     <ItemsControl ItemsSource="{Binding Products}">
       <ItemsControl.ItemTemplate>
         <DataTemplate>
@@ -21,6 +21,7 @@
               <Label Content="{Binding Id}" />
               <Label Content="{Binding ItemNumber}" />
               <Label Content="{Binding Name}" />
+              <Label Content="{Binding SupplierName}" />
               <Label Content="{Binding Price}"/>
             </StackPanel>
           </StackPanel>

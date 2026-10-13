@@ -11,6 +11,5 @@
         <vm:CustomersViewModel></vm:CustomersViewModel>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding PageTitle}"
-               FontSize="30" Foreground="White" />
+    <Label Classes="pageTitle" Content="{Binding PageTitle}" />
 </UserControl>

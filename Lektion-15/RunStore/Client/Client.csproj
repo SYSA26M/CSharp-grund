@@ -21,5 +21,6 @@
 
   <ItemGroup>
     <AvaloniaXaml Remove="Assets/Styles/Colors.axaml" />
+    <AvaloniaXaml Remove="Assets/Styles/Colors_1.axaml" />
   </ItemGroup>
 </Project>
