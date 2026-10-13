@@ -13,18 +13,32 @@
 
   <StackPanel>
     <Label Classes="pageTitle" Content="{Binding PageTitle}" />
+
+    <Border
+      BorderBrush="{DynamicResource ForegroundColor}"
+      BorderThickness="0 0 0 1" Padding="0 20 0 0">
+      <!-- Rubriker -->
+      <Grid ColumnDefinitions="100,200,200,*,35,35" ShowGridLines="False">
+        <Label Content="Artikelnr" />
+        <Label Grid.Column="1" Content="Produktnamn" />
+        <Label Grid.Column="2" Content="Leverantör" />
+        <Label Grid.Column="3" Content="Priset" HorizontalAlignment="Right" />
+        <Label Grid.Column="4"/>
+        <Label Grid.Column="5"/>
+      </Grid>
+    </Border>
+    <!-- Data -->
     <ItemsControl ItemsSource="{Binding Products}">
       <ItemsControl.ItemTemplate>
         <DataTemplate>
-          <StackPanel>
-            <StackPanel Orientation="Horizontal">
-              <Label Content="{Binding Id}" />
-              <Label Content="{Binding ItemNumber}" />
-              <Label Content="{Binding Name}" />
-              <Label Content="{Binding SupplierName}" />
-              <Label Content="{Binding Price}"/>
-            </StackPanel>
-          </StackPanel>
+          <Grid ColumnDefinitions="100,200,200,*,35,35" ShowGridLines="False">
+            <Label Content="{Binding ItemNumber}" />
+            <Label Grid.Column="1" Content="{Binding Name}" />
+            <Label Grid.Column="2" Content="{Binding SupplierName}" />
+            <Label Grid.Column="3" Content="{Binding Price}" HorizontalAlignment="Right" />
+            <Label Grid.Column="4" FontFamily="{DynamicResource IconFont}" Content="&#xE3B4;" Foreground="Green" HorizontalAlignment="Center" />
+            <Label Grid.Column="5" FontFamily="{DynamicResource IconFont}" Content="&#xE4A6;" Foreground="Red" HorizontalAlignment="Center" />
+          </Grid>
         </DataTemplate>
       </ItemsControl.ItemTemplate>
     </ItemsControl>
