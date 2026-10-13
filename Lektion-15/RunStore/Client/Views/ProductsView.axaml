@@ -6,5 +6,26 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Client.Views.ProductsView"
              x:DataType="vm:ProductsViewModel">
-  <TextBlock Text="{Binding PageTitle}" Foreground="White" FontSize="30" />
+
+  <Design.DataContext>
+    <vm:ProductsViewModel></vm:ProductsViewModel>
+  </Design.DataContext>
+
+  <StackPanel>
+    <TextBlock Text="{Binding PageTitle}" Foreground="{DynamicResource ForegroundColor}" FontSize="30" />
+    <ItemsControl ItemsSource="{Binding Products}">
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <Label Content="{Binding Id}" />
+              <Label Content="{Binding ItemNumber}" />
+              <Label Content="{Binding Name}" />
+              <Label Content="{Binding Price}"/>
+            </StackPanel>
+          </StackPanel>
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+  </StackPanel>
 </UserControl>

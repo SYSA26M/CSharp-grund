@@ -17,25 +17,25 @@
         <Grid ColumnDefinitions="Auto,*">
                 <Border Padding="20" Background="{DynamicResource SideBarGradient}">
                         <StackPanel Spacing="10" >
-                                <Button Command="{Binding GoToHomeCommand}">
+                                <Button Classes="menu" Command="{Binding GoToHomeCommand}">
                                         <StackPanel Orientation="Horizontal">
                                                 <Label FontFamily="{DynamicResource IconFont}" Content="&#xe2c2;" />
                                                 <Label Content="Hem"/>
                                         </StackPanel>
                                 </Button>
-                                <Button Command="{Binding GoToProductsCommand}">
+                                <Button Classes="menu" Command="{Binding GoToProductsCommand}">
                                         <StackPanel Orientation="Horizontal">
                                                 <Label FontFamily="{DynamicResource IconFont}" Content="&#xed60;" />
                                                 <Label Content="Produkter"/>
                                         </StackPanel>
                                 </Button>
-                                <Button Command="{Binding GoToCustomersCommand}">
+                                <Button Classes="menu" Command="{Binding GoToCustomersCommand}">
                                         <StackPanel Orientation="Horizontal">
                                                 <Label FontFamily="{DynamicResource IconFont}" Content="&#xe4d6;" />
                                                 <Label Content="Kunder"/>
                                         </StackPanel>
                                 </Button>
-                                <Button Command="{Binding GoToOrdersCommand}"><StackPanel Orientation="Horizontal">
+                                <Button Classes="menu" Command="{Binding GoToOrdersCommand}"><StackPanel Orientation="Horizontal">
                                         <Label FontFamily="{DynamicResource IconFont}" Content="&#xe0b0;" />
                                         <Label Content="Beställningar"/>
                                 </StackPanel></Button>
