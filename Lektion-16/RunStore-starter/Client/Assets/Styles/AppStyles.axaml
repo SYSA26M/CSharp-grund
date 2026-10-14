@@ -1,0 +1,59 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <Border Padding="20">
+      <!-- Add Controls for Previewer Here -->
+      <Button>
+        <StackPanel Orientation="Horizontal">
+          <Label FontFamily="{StaticResource IconFont}" Content="&#xE2C2;"/>
+          <Label Content="Inställningar"/>
+        </StackPanel>
+      </Button>
+    </Border>
+  </Design.PreviewWith>
+
+  <!-- Add Styles Here -->
+  <Style Selector="Window">
+    <Setter Property="FontFamily" Value="{DynamicResource BaseFont}" />
+    <Setter Property="Background" Value="{DynamicResource BackgroundColor}" />
+  </Style>
+
+  <Style Selector="Label.pageTitle">
+    <Setter Property="FontSize" Value="25" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="Margin" Value="0 0 0 30" />
+    <Setter Property="Foreground" Value="Orange" />
+  </Style>
+
+  <Style Selector="Button.menu">
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+    <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="MinWidth" Value="200" />
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="Padding" Value="10 5" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+
+  <Style Selector="Button.menu:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="{DynamicResource ButtonHoverBackground}" />
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+  </Style>
+
+  <Style Selector="Button">
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+    <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="Padding" Value="10 5" />
+    <Setter Property="BorderBrush" Value="{DynamicResource ForegroundColor}" />
+    <Setter Property="BorderThickness" Value="1" />
+  </Style>
+
+  <Style Selector="Button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="{DynamicResource ButtonHoverBackground}" />
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+  </Style>
+
+</Styles>
