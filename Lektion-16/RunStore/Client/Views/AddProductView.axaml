@@ -13,5 +13,33 @@
 
   <StackPanel>
     <Label Classes="pageTitle" Content="{Binding PageTitle}" />
+    <Border
+      HorizontalAlignment="Center"
+      Margin="0 20 0 10"
+      Padding="20"
+      BorderBrush="{DynamicResource ForegroundColor}"
+      BorderThickness="1">
+      <StackPanel>
+        <StackPanel Margin="0 0 0 10" Orientation="Horizontal">
+          <Label Width="150" Content="Artikelnr" />
+          <TextBox Text="{Binding ItemNumber}" Width="200" MinWidth="200" />
+        </StackPanel>
+        <StackPanel Margin="0 0 0 10" Orientation="Horizontal">
+          <Label Width="150" Content="Produktnamn" />
+          <TextBox Text="{Binding ProductName}" Width="200" MinWidth="200" />
+        </StackPanel>
+        <StackPanel Margin="0 0 0 10" Orientation="Horizontal">
+          <Label Width="150" Content="Leverantör" />
+          <TextBox Text="{Binding Supplier}" Width="200" MinWidth="200" />
+        </StackPanel>
+        <StackPanel Margin="0 0 0 10" Orientation="Horizontal">
+          <Label Width="150" Content="Pris" />
+          <TextBox Text="{Binding Price}" Width="200" MinWidth="200" />
+        </StackPanel>
+        <StackPanel Margin="0 20 0 0">
+          <Button Command="{Binding AddCommand}" Content="Spara" Width="100" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></Button>
+        </StackPanel>
+      </StackPanel>
+    </Border>
   </StackPanel>
 </UserControl>

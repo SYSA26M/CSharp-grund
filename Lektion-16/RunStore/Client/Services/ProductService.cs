@@ -7,17 +7,24 @@ namespace Client.Services;
 
 public class ProductService : IProductService
 {
+    private readonly string _path = string.Empty;
+    private readonly Storage<Product> _storage;
+
+    public ProductService()
+    {
+        _path = string.Concat(Environment.CurrentDirectory, "/Data/products.json");
+        _storage = new();
+    }
     public void Add(Product product)
     {
-        throw new NotImplementedException();
+        var products = ListAll();
+        products.Add(product);
+        _storage.Write(_path, products);
     }
 
     public List<Product> ListAll()
     {
-        return [
-            new(){ItemNumber="1000", Name="Dojan 1",Price=1500},
-            new(){ItemNumber="1001", Name="Tröja 1",Price=495},
-            new(){ItemNumber="1002", Name="Jacka 1",Price=2500}
-        ];
+        var products = _storage.Read(_path);
+        return products;
     }
 }

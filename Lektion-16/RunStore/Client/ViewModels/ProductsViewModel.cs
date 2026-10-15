@@ -25,7 +25,7 @@ public partial class ProductsViewModel : ViewModelBase
         try
         {
             // IProductService service = new ProductService();
-            IProductService service = new ProductServiceFromFile();
+            IProductService service = new ProductService();
             Products = new ObservableCollection<Product>(service.ListAll());
         }
         catch (Exception ex)

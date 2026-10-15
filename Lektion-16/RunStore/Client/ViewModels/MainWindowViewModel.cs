@@ -10,6 +10,7 @@ public partial class MainWindowViewModel : ViewModelBase
     private readonly ProductsViewModel _productView = new();
     private readonly CustomersViewModel _customerView = new();
     private readonly OrdersViewModel _orderView = new();
+    private readonly AddProductViewModel _addProductView = new();
 
     [ObservableProperty]
     public partial ViewModelBase CurrentView { get; set; }
@@ -20,18 +21,16 @@ public partial class MainWindowViewModel : ViewModelBase
         CurrentView = _homeView;
     }
 
+    // Navigering...
     [RelayCommand]
     private void GoToHome() => CurrentView = _homeView;
-
     [RelayCommand]
-    private void GoToProducts() => CurrentView = _productView;
+    private void GoToProducts() => CurrentView = new ProductsViewModel();
+    // private void GoToProducts() => CurrentView = _productView;
     [RelayCommand]
     private void GoToCustomers() => CurrentView = _customerView;
     [RelayCommand]
     private void GoToOrders() => CurrentView = _orderView;
     [RelayCommand]
-    private void GoToAddProduct()
-    {
-        Console.WriteLine("Ska lägga till en ny produkt");
-    }
+    private void GoToAddProduct() => CurrentView = _addProductView;
 }

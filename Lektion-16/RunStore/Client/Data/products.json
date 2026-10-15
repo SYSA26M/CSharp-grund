@@ -1,92 +1,326 @@
 [
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "234d1eaaa87149429b0bbd6e8dc759c0",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556514/shoe-1_qig4ut.jpg",
     "itemNumber": "1000",
     "name": "Core 2000",
-    "supplierName": "Company",
-    "price": 1295
+    "price": 1295,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "40f6e853ffb2424bb3eb652ba03576f2",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556530/shoe-3_qbzcwy.jpg",
     "itemNumber": "1002",
     "name": "Gel 27",
-    "supplierName": "Company",
-    "price": 2295
+    "price": 2295,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "7a62c46d3a4b4ac4a4133ba66e47b6ec",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556497/jacket-1_rio6db.jpg",
     "itemNumber": "1009",
     "name": "Jacket",
-    "supplierName": "Company",
-    "price": 1495
+    "price": 1495,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "7b460cb714334dafa88a3bfc28388555",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556531/t-shirt-2_gg3ags.jpg",
     "itemNumber": "1005",
     "name": "Limited Running t-shirt",
-    "supplierName": "Company",
-    "price": 385
+    "price": 385,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "f31656af57914954a59269e2ff0a8da9",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556532/t-shirt-3_uqcb6b.jpg",
     "itemNumber": "1006",
     "name": "Road Black t-shirt",
-    "supplierName": "Company",
-    "price": 495
+    "price": 495,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "b626e20836c34ee0b6c5156ee41130e5",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556531/t-shirt-1_p55bwy.jpg",
     "itemNumber": "1004",
     "name": "Road White t-shirt",
-    "supplierName": "Company",
-    "price": 495
+    "price": 495,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "c352647dd9d641408a8afe289c8286c6",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556531/shoe-4_lrv51e.jpg",
     "itemNumber": "1003",
     "name": "Sonoma 7GTX",
-    "supplierName": "Company",
-    "price": 2295
+    "price": 2295,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "7f5f6b47bf474f6c9c6dea38f7af192e",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556530/shoe-2_alelr0.jpg",
     "itemNumber": "1001",
     "name": "Trail 25",
-    "supplierName": "Company",
-    "price": 1895
+    "price": 1895,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "ed9528f716d5418a92e349b90bc7c509",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556547/vest-1_e4qwig.jpg",
     "itemNumber": "1007",
     "name": "Vest pro",
-    "supplierName": "Company",
-    "price": 895
+    "price": 895,
+    "supplierName": "Company"
   },
   {
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "id": "b36264a01e9147cd845157c0b9b000e9",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "imageUrl": "https://res.cloudinary.com/softtech-dev/image/upload/v1786556463/vest-2_rcrjyf.jpg",
     "itemNumber": "1008",
     "name": "Vest unisex",
-    "supplierName": "Company",
-    "price": 995
+    "price": 995,
+    "supplierName": "Company"
+  },
+  {
+    "id": "bc55ba85-f9d4-4f1a-b296-3b6c1f4a81b9",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "594b15d9-8ad8-4b42-9fbf-10e5278735d6",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "fa81ebd9-ed06-4374-94c1-78717dd3786c",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "8e387ae4-3190-495e-a7cc-53f5e27ee228",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "bb62b4a7-08fa-4697-972a-428b90c20f95",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "864a9333-a860-4277-90e9-eaace356639a",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "198b2975-03d3-496c-a0bd-aa805287002f",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "061f8fa8-4a87-4185-9275-5b46e13badc5",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "3b44fc1a-4ecf-48e6-984b-f6a8b8561286",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "176fc7c8-3329-44b2-b197-7002a9334b76",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "a626048a-bac6-4824-b0b7-6ec7df533a9c",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "6b4c96b2-50ed-472c-a125-d25c370f1288",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "855a1c70-1e09-4414-8efb-175abee5b0ce",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "48853e3a-7cc9-4ee1-87ee-e9e067cfa9ee",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "e6335258-2a85-4561-ae42-c5e1e2fa6e69",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "3b83db5c-b339-45f6-b3e5-ff4d1c337105",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "a832c09d-d3ec-4bc0-ab9d-529a796eaf6f",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "7f2d6c32-7b21-44e1-be5a-4854de72f52f",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "d6132964-3eeb-4373-aeb0-8a278255134f",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "b7aafa19-e582-4ba0-9529-44c4610125ac",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "a1c616da-b099-45f2-9836-641c178321af",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "0d527090-4d5c-4c81-b3b6-235cb7f4dcaf",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "4152aca4-2957-4c26-8f06-84566cf12104",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "56838b9e-4673-4189-80d4-0d6f7f2cee9f",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "30634c48-e938-490a-ad1a-7974839313ae",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
+  },
+  {
+    "id": "d532a39b-0e84-4417-b0a9-c3583a16041c",
+    "description": null,
+    "imageUrl": null,
+    "itemNumber": "1010",
+    "name": "Strumpor",
+    "price": 295,
+    "supplierName": "Puma"
   }
 ]
