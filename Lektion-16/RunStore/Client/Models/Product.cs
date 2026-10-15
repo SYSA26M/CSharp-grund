@@ -2,7 +2,7 @@ using System;
 
 namespace Client.Models;
 
-public class Product
+public record Product
 {
     public string Id { get; set; } = Guid.NewGuid().ToString();
     public string? Description { get; set; }

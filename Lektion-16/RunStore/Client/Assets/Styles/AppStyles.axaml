@@ -3,9 +3,9 @@
   <Design.PreviewWith>
     <Border Padding="20">
       <!-- Add Controls for Previewer Here -->
-      <Button>
+      <Button Classes="icon-danger">
         <StackPanel Orientation="Horizontal">
-          <Label FontFamily="{StaticResource IconFont}" Content="&#xE2C2;"/>
+          <Label  FontFamily="{StaticResource IconFont}" Content="&#xE2C2;"/>
           <Label Content="Inställningar"/>
         </StackPanel>
       </Button>
@@ -38,7 +38,6 @@
   <Style Selector="Button.menu:pointerover /template/ ContentPresenter">
     <Setter Property="Background" Value="{DynamicResource ButtonHoverBackground}" />
     <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}"/>
-    <Setter Property="FontWeight" Value="SemiBold"/>
   </Style>
 
   <Style Selector="Button">
@@ -53,7 +52,36 @@
   <Style Selector="Button:pointerover /template/ ContentPresenter">
     <Setter Property="Background" Value="{DynamicResource ButtonHoverBackground}" />
     <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}"/>
-    <Setter Property="FontWeight" Value="SemiBold"/>
+  </Style>
+
+  <Style Selector="Button.icon">
+    <Setter Property="Foreground" Value="{DynamicResource ButtonIcon}" />
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="MinWidth" Value="40" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style Selector="Button.icon:pointerover /template/ ContentPresenter">
+    <Setter Property="Foreground" Value="{DynamicResource ButtonIcon}"/>
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+
+  <Style Selector="Button.icon-danger">
+    <Setter Property="Foreground" Value="{DynamicResource ButtonIconDanger}" />
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="MinWidth" Value="40" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style Selector="Button.icon-danger:pointerover /template/ ContentPresenter">
+    <Setter Property="Foreground" Value="{DynamicResource ButtonIconDanger}"/>
+    <Setter Property="Background" Value="Transparent" />
   </Style>
 
 </Styles>

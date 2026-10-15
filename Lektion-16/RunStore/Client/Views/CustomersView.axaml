@@ -11,5 +11,34 @@
         <vm:CustomersViewModel></vm:CustomersViewModel>
     </Design.DataContext>
 
-    <Label Classes="pageTitle" Content="{Binding PageTitle}" />
+    <StackPanel>
+        <Label Classes="pageTitle" Content="{Binding PageTitle}" />
+
+        <!-- Rubriker -->
+        <Border BorderBrush="{DynamicResource ForegroundColor}" BorderThickness="0 0 0 0.8" Padding="0 50 0 0">
+            <Grid ColumnDefinitions="100,150,200,*,Auto,Auto">
+                <Label Content="Kundnr" />
+                <Label Grid.Column="1" Content="Förnamn" />
+                <Label Grid.Column="2" Content="Efternamn" />
+                <Label Grid.Column="3" Content="E-Post" />
+                <Label Grid.Column="4" />
+                <Label Grid.Column="5" />
+            </Grid>
+        </Border>
+        <!-- Data -->
+        <ItemsControl Padding="0 5" ItemsSource="{Binding Customers}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="100,150,200,*,Auto,Auto">
+                        <Label Content="{Binding Id}" />
+                        <Label Grid.Column="1" Content="{Binding FirstName}" />
+                        <Label Grid.Column="2" Content="{Binding LastName}" />
+                        <Label Grid.Column="3" Content="{Binding Email}" />
+                        <Button Classes="icon" Grid.Column="4" FontFamily="{DynamicResource IconFont}" Content="&#xebc6;" Padding="10 0 0 10" />
+                        <Button Classes="icon-danger" Grid.Column="5" FontFamily="{DynamicResource IconFont}" Content="&#xe4a6;" Padding="10 0 0 10" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
 </UserControl>

@@ -1,3 +1,4 @@
+using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -28,4 +29,9 @@ public partial class MainWindowViewModel : ViewModelBase
     private void GoToCustomers() => CurrentView = _customerView;
     [RelayCommand]
     private void GoToOrders() => CurrentView = _orderView;
+    [RelayCommand]
+    private void GoToAddProduct()
+    {
+        Console.WriteLine("Ska lägga till en ny produkt");
+    }
 }

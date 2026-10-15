@@ -7,6 +7,11 @@ namespace Client.Services;
 
 public class ProductService : IProductService
 {
+    public void Add(Product product)
+    {
+        throw new NotImplementedException();
+    }
+
     public List<Product> ListAll()
     {
         return [

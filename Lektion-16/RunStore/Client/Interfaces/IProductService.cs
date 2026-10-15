@@ -7,4 +7,5 @@ namespace Client.Interfaces;
 public interface IProductService
 {
     List<Product> ListAll();
+    void Add(Product product);
 }

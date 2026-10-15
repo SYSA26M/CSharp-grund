@@ -19,11 +19,15 @@
         <Color x:Key="PrimaryForegroundColor">#f4f4f4</Color>
         <Color x:Key="PrimaryButtonBackgroundColor">#17165D</Color>
         <Color x:Key="PrimaryButtonForegroundColor">#25217C</Color>
+        <Color x:Key="ButtonIconColor">#1DE31D</Color>
+        <Color x:Key="ButtonIconDangerColor">Red</Color>
 
         <SolidColorBrush x:Key="BackgroundColor" Color="{DynamicResource PrimaryBackgroundColor}" />
         <SolidColorBrush x:Key="ForegroundColor" Color="{DynamicResource PrimaryForegroundColor}" />
         <SolidColorBrush x:Key="ButtonBackground" Color="{DynamicResource PrimaryButtonBackgroundColor}" />
         <SolidColorBrush x:Key="ButtonHoverBackground" Color="{DynamicResource PrimaryButtonForegroundColor}" />
+        <SolidColorBrush x:Key="ButtonIcon" Color="{DynamicResource ButtonIconColor}" />
+        <SolidColorBrush x:Key="ButtonIconDanger" Color="{DynamicResource ButtonIconDangerColor}" />
 
         <LinearGradientBrush x:Key="SideBarGradient" StartPoint="0% 0%" EndPoint="0% 100%">
             <GradientStop Offset="0" Color="#1E1A4D" />

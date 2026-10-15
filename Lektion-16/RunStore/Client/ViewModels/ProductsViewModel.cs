@@ -5,6 +5,7 @@ using Client.Interfaces;
 using Client.Models;
 using Client.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Client.ViewModels;
 
@@ -31,6 +32,17 @@ public partial class ProductsViewModel : ViewModelBase
         {
             Console.WriteLine(ex.Message);
         }
+    }
 
+    [RelayCommand]
+    private void Edit(string id)
+    {
+        Console.WriteLine("Uppdaterar produkt med id: " + id);
+    }
+
+    [RelayCommand]
+    private void Delete(string id)
+    {
+        Console.WriteLine("Tar bort produkt med id: " + id);
     }
 }

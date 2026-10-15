@@ -13,7 +13,6 @@
 
     <StackPanel>
         <Label Classes="pageTitle" Content="{Binding PageTitle}" />
-        <Button>Testa mig</Button>
     </StackPanel>
 
 </UserControl>
